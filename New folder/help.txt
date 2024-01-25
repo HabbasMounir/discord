@@ -1,0 +1,24 @@
+fonts:
+    gg sans
+    ABC Ginto Nord
+
+font size :
+
+    56px
+    48px
+    40px
+    32px
+    20px
+    16px
+    14px
+
+colors:
+    #404eed
+    #23272a
+    #f6f6f6
+    #ffffff
+
+
+hint:
+    css var
+    font-face 

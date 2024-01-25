@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'gg sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../assets/fonts/gg-sans/gg\ sans\ Bold.ttf') ;
+  }
+  
+  @font-face {
+    font-family: 'gg sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/gg-sans/gg\ sans\ Regular.ttf') ;
+  }
+  @font-face {
+    font-family: 'ABC Ginto Nord';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/ginto/ABCGintoNord-Ultra.otf') ;
+  }
+  
+  :root{
+    --font-primary:"gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-headline:  "ABC Ginto Nord","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+
+/* font size : */
+
+    --large-size:56px;
+    --large-size:48px;
+    --large-size:40px;
+    --large-size:32px;
+    --large-size:16px;
+    --large-size:14px;
+    
+  
+
+/* colors: */
+    --color-main:#5865f2;
+    --color-dark:#23272a;
+    --color-gray:#f6f6f6;
+    --color-white:#ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+    line-height: 120%;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 120px 40px;
+    /* gap: 40px;   */
+}
+
+
+
+.container--left{flex-direction: row-reverse;}
+.container--right{flex-direction: row;}
+.container--last{flex-direction: column;padding-bottom: 80px;}
+.container--journey{flex-direction: column;    padding: 0px 40px; margin-bottom: 120px;}
+
+.container--gray{background-color: var(--color-gray);}
+.container--white{background-color: var(--color-white);}
+
+.container--left img,.container--right img{
+    width: 100%;
+    max-width: 678px;
+    max-height: 440px;
+}
+.container--last img{
+    width: 100%;
+    margin-top: 16px;
+}
+
+.container--left .content,.container--right .content{  width: 380px;}
+.container--last .content{ width: 980px;text-align: center;}
+
+.title{
+    font-size: 48px;
+    color: var(--color-dark);
+    font-weight: 800;
+}
+
+.container--last .title{
+    font-size: clamp(20px,4vw,38.5px);
+    text-transform: uppercase;
+    font-family: var(--font-headline);
+    color: var(--color-dark);
+    line-height:38px;
+
+}
+
+.description{
+    font-size: clamp(16px,2vw,20px);
+    margin-top: 24px;
+    line-height: 165%;
+}
+.description__journey{
+font-weight: 800;
+font-size: 32px;
+position: relative;
+}
+.description__journey::before{
+    content:url('../assets/images/sparkles.svg');
+/* height: 10px; */
+/* width: 10px; */
+/* background-color: #5865f2; */
+position: absolute;
+left: -17%;
+top: -75%;
+}
+
+
+
+.btn{
+    border-radius: 28px;
+    font-size: 20px;
+    padding: 16px 32px;
+    margin-top: 40px;
+line-height: 0;
+    background-color: var(--color-main);
+    color: var(--color-white);
+    transition: .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.btn:hover{
+    background-color: hsl(235,86.1%,71.8%);
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    cursor: pointer;
+    color: var(--color-white);
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
